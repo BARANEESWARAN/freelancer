@@ -18,7 +18,7 @@ const FreelanceCard = ({ name, expertise, experience }) => {
           <label className="label">Experience</label>
           <p className='data'>{experience}</p>
         </div>
-        <NavLink to={"/freelacer-registration"} className="contact">Contact</NavLink>
+        <NavLink to={"/client-registration"} className="contact">Contact</NavLink>
       </article>
     </div>
   );
