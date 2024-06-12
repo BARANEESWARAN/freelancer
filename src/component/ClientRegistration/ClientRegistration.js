@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Select, Row, Col } from 'antd';
 import './ClientRegistration.css';
-import { MailOutlined, FacebookOutlined } from '@ant-design/icons';
+import { MailOutlined, FacebookOutlined, ArrowLeftOutlined } from '@ant-design/icons';
 import Header from "../Header/Header";
+import { NavLink } from 'react-router-dom';
 
 const { Option } = Select;
 
@@ -32,10 +33,14 @@ function ClientRegistration() {
   };
 
   return (
-    <>
-   
+    <div className='client'>
+      <NavLink to={"/"}>
+<Button className='back-btn' icon={<ArrowLeftOutlined />}>
+      Back
+    </Button> 
+    </NavLink>
    <div className='clientpage'>
-
+  
  
     <section className="container">
       
@@ -154,7 +159,7 @@ function ClientRegistration() {
             Login with Facebook
           </Button>
           <Button className="field google" type="default" icon={<MailOutlined />}>
-            Login with Email
+            Login with Gmail
           </Button>
         </div>
        
@@ -162,7 +167,7 @@ function ClientRegistration() {
     </section>
 
     </div>
-    </>
+    </div>
   );
 }
 

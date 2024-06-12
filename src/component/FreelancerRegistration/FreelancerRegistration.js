@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Select, Row, Col, message } from 'antd';
 import './FreelancerRegistration.css';
-import { MailOutlined, FacebookOutlined } from '@ant-design/icons';
-import { useNavigate } from 'react-router-dom';
+import { MailOutlined, FacebookOutlined, ArrowLeftOutlined } from '@ant-design/icons';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const { Option } = Select;
 
@@ -38,8 +38,12 @@ function FreelancerRegistration() {
   
 
   return (
-    <>
-  
+    <div className='client'>
+       <NavLink to={"/job-posts"}>
+<Button className='back-btn' icon={<ArrowLeftOutlined />}>
+      Back
+    </Button> 
+    </NavLink> 
     <div className='freelancerpage'>
    
     <section className="container">
@@ -145,7 +149,7 @@ function FreelancerRegistration() {
             Login with Facebook
           </Button>
           <Button className="field google" type="default" icon={<MailOutlined />}>
-            Login with Email
+            Login with Gmail
           </Button>
         </div>
        
@@ -154,7 +158,7 @@ function FreelancerRegistration() {
        
     </div>
 
-    </>
+    </div>
   );
 }
 

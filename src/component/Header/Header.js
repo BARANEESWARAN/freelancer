@@ -11,9 +11,13 @@ const Header = () => {
 
   return (
     <nav>
+       <NavLink to={"/"}>
       <div className="logo">
+       
       <img className="brand" src={Logo} alt="logo"/>
+   
       </div>
+      </NavLink>
       <input type="checkbox" id="click" />
       <label htmlFor="click" className="menu-btn">
         <i className="fas fa-bars" style={{ color: "white" }}></i>

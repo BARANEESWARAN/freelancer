@@ -3,14 +3,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-padding: 10px 2rem;
-  background: rgb(130, 106, 251);  
+/* padding: 10px 2rem; */
+ 
   width: 100%;
   min-height: 100vh; 
+
 }
 
+.client{
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(130, 106, 251);  
+}
+.back-btn{
+ margin: 0.5rem 1rem 0 1rem;
+}
 .container {
-  position: relative;
+
   max-width: 700px;
   width: 100%;
   background: #fff;

@@ -17,8 +17,8 @@ nav .logo{
   align-items: center;
 }
 nav .logo .brand{
-width: 8rem;
-border-radius: 0.2rem;
+width: 11rem;
+border-radius: 5px;
 }
 nav ul{
   display: flex;
