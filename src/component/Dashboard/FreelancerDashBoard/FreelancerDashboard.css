@@ -1,0 +1,33 @@
+.freelancer-table{
+  padding: 0px 25px 0px 30px !important;
+}
+
+.action-button{
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.freelancer-table .ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-3rel02).ant-table-wrapper .ant-table-thead >tr>td {
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  text-align: start;
+  background: cornflowerblue;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease;
+}
+
+.registration-button{
+  padding: 25px 60px;
+}
+.create-button{
+  background-color: cornflowerblue;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

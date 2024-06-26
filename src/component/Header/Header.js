@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-import Logo from "../../asset/logo.jpg"
+import Logo from "../../asset/logo.png"
 const Header = () => {
   const [activeLink, setActiveLink] = useState('Home');
 
@@ -56,7 +56,16 @@ const Header = () => {
             className={({ isActive }) => (isActive ? 'active' : '')}
             onClick={() => handleClick('Job Posts')}
           >
-            Job Posts
+            Post Job
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/find-job"
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            onClick={() => handleClick('Find Job')}
+          >
+            Find Job
           </NavLink>
         </li>
         <li>
